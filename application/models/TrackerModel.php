@@ -19,8 +19,9 @@ class TrackerModel extends CI_Model{
 	
 	}
 	public function ExamStatus($array){
-
-		$this->db->select('Student_Number,Reference_Number,Course');
+		// BELL-BELL 2.18.21
+		// $this->db->select('Student_Number,Reference_Number,Course');
+		$this->db->select('Student_Number,Reference_Number');
 		$this->db->where('Reference_Number',$array['Reference_Number']);
 		$result = $this->db->get('Student_Info');
 		return $result->result_array();

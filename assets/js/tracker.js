@@ -30,8 +30,6 @@ function getStatus(firstload = 0){
             content:$('#Payment'),
         }
     };
-    
-    
     $.ajax({
         
         url: $("#trackerform").attr('action'),
@@ -42,7 +40,7 @@ function getStatus(firstload = 0){
             SchoolYear:$('#StudentInfo').data('sy'),
         },
         success: function(response){
-
+            console.log();
             response = JSON.parse(response);
             $active = 0;
             $complete = 1;
@@ -87,7 +85,7 @@ function getStatus(firstload = 0){
                     $('#done_tab').addClass("active");
                 }
             }
-            console.log(response);
+            console.log($("#trackerform").attr('action'));
 
         },
         fail: function(){

@@ -118,7 +118,8 @@
 		            <!--      Wizard container        -->
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="red" id="wizardProfile">
-							<form id="trackerform" action="<?php echo base_url(); ?>index.php/Status/getData" method="get">
+							<!-- <form id="trackerform" action="<?php echo base_url(); ?>index.php/Status/getData" method="get"> -->
+							<form id="trackerform" action="index.php/Status/getData" method="get">
 		                		<!--        You can switch " data-color="orange" "  with one of the next bright colors: "blue", "green", "orange", "red", "azure"          -->
 		                    	<div class="wizard-header text-center">
 		                        	<h3 class="wizard-title" style="color:green; font-weight:bold">Enrollment Tracker</h3>
@@ -159,7 +160,10 @@
 														<i class="ti-check"></i>
 													</div>
 												</div>
-												Examination
+												<!-- Examination -->
+												<!-- BELL-BELL 2.18.21 -->
+												Encode of Information
+												<!--  -->
 											</a>
 										</li>
 			                            <li id="advising_tab">
@@ -222,7 +226,10 @@
 																	<p>2</p>
 																</div>
 																<i class="ti-pencil-alt"></i>
-																<p>Take the Entrance Exam</p>
+																<!-- BELL-BELL 2.18.21 -->
+																<!-- <p>Take the Entrance Exam</p> -->
+																<p style="font-size:15px">Fill in the Application Form</p>
+																<!--  -->
 															</div>
 														</div>
 													</div>
@@ -246,15 +253,17 @@
 													<div class="col-sm-4">
 														<div class="choice" data-toggle="wizard-checkbox">
 															<input type="checkbox" name="jobb" value="Design">
-															<a target="_blank" href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeO1z7i8lMpFu39RD7Py7ICeevicjtWYko6sedmZJdDodsPkw/viewform?fbclid=IwAR0-0BEcJcdqV4jCImoB085yhs-CpyQpw6QqklCD74Jg0YLWditKA0lLrGU">
-															<div class="card card-checkboxes card-hover-effect" style="color:#666">
-																<div class="checklist-numbering">
-																	<p>1</p>
+															<!-- <a target="_blank" href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeO1z7i8lMpFu39RD7Py7ICeevicjtWYko6sedmZJdDodsPkw/viewform?fbclid=IwAR0-0BEcJcdqV4jCImoB085yhs-CpyQpw6QqklCD74Jg0YLWditKA0lLrGU"> -->
+																<div class="card card-checkboxes card-hover-effect" style="color:#666">
+																	<div class="checklist-numbering">
+																		<p>1</p>
+																	</div>
+																	<i class="ti-world"></i>
+																	<!-- BELL-BELL 2.18.21 -->
+																	<!-- <p style="font-size:15px">Take the Online Exam (Click to open)</p> -->
+																	<p style="font-size:15px">Fill in the Online Application Form</p>
 																</div>
-																<i class="ti-world"></i>
-																<p style="font-size:15px">Take the Online Exam (Click to open)</p>
-															</div>
-															</a>
+															<!-- </a> -->
 														</div>
 													</div>
 													<div class="col-sm-4">
@@ -265,7 +274,10 @@
 																	<p>2</p>
 																</div>																
 																<i class="ti-email"></i>
-																<p>Wait for email confirmation</p>
+																<!-- BELL-BELL 2.18.21 -->
+																<!-- <p>Wait for email confirmation</p> -->
+																<p>Proceed to Enrollment Tracker</p>
+																<!--  -->
 															</div>
 														</div>
 													</div>
@@ -327,6 +339,7 @@
 		                                                </div>
 		                                            </div>
 		                                        </div>
+												<!-- BELL-BELL 2.18.21
 												<div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-checkbox">
 		                                                <input type="checkbox" name="jobb" value="Develop">
@@ -339,18 +352,26 @@
 		                                                </div>
 		                                            </div>
 		                                        </div>
+												-->
+												<div class="col-sm-4">
+												</div>
 												<div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-checkbox">
 		                                                <input type="checkbox" name="jobb" value="Develop">
 		                                                <div class="card card-checkboxes card-hover-effect" style="color:#666">
 															<div class="checklist-numbering">
-																<p>5</p>
+																<!-- BELL-BELL 2.18.21 -->
+																<!-- <p>5</p> -->
+																<p>4</p>
+																<!--  -->
 															</div>
 															<i class="ti-thumb-up"></i>
 															<p>Proceed to the next step! </p>
 		                                                </div>
 		                                            </div>
 		                                        </div>
+												<div class="col-sm-4">
+												</div>
 												<div class="col-sm-12">
 													<h5 class="info-text"> Note: Skip step 4 if you are a new student.</h5>
 		                                        </div>
@@ -360,7 +381,19 @@
 		                            </div>
 		                            <div class="tab-pane content_tab" id="Payment">
 										<h5 class="info-text"> Payment </h5>
+										<!-- <h3 class="info-text">
+											<a href="https://www.aub.com.ph/">
+												SDCA Online Payment
+											</a>
+										</h3> -->
 										<div class="row">
+											<div class="col-sm-12">
+												<h3 style="text-align: center;">
+													<a href="https://www.aub.com.ph/">
+														SDCA Online Payment
+													</a>
+												</h3>
+											</div>
 											<div class="col-sm-8 col-sm-offset-2">
 												<div class="col-sm-4">
 													<div class="choice" data-toggle="wizard-checkbox">
@@ -371,12 +404,21 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-sm-7">
+												<div class="col-sm-4">
 													<div class="choice" data-toggle="wizard-checkbox">
 														<input type="checkbox" name="jobb" value="Code">
 														<div class="card card-checkboxes card-hover-effect" style="color:#666">
 															<i class="ti-credit-card"></i>
 															<p>If paid through alternative payment methods, provide proof of payment to the cashier</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="choice" data-toggle="wizard-checkbox">
+														<input type="checkbox" name="jobb" value="Design">
+														<div class="card card-checkboxes card-hover-effect" style="color:#666">
+															<i class="ti-angle-double-right"></i>
+															<p>Proceed to the Cashier for payment</p>
 														</div>
 													</div>
 												</div>
@@ -443,5 +485,6 @@
 	<script src="<?php echo base_url(); ?>assets/js/jquery.validate.min.js" type="text/javascript"></script>
 
 	<!--  Tracker JS	-->	
-	<script src="<?php echo base_url(); ?>assets/js/tracker.js" type="text/javascript"></script>
+	<!-- <script src="<?php echo base_url(); ?>assets/js/tracker.js" type="text/javascript"></script> -->
+	<script src="assets/js/tracker.js" type="text/javascript"></script>
 </html>

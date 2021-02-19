@@ -112,11 +112,12 @@ class Status extends CI_Controller {
 
 	}
 	private function getExaminationStatus($input){
-
-		$status = $this->TrackerModel->ExamStatus($input);
-		if($status[0]['Course'] == 'N/A' || $status[0]['Course'] == '' || $status[0]['Course'] == null){
-			return 0;
-		}
+		// BELL-BELL 2.18.21
+		// Because i removed the course on TrackerModel > ExampStatus()
+		// $status = $this->TrackerModel->ExamStatus($input);
+		// if($status[0]['Course'] == 'N/A' || $status[0]['Course'] == '' || $status[0]['Course'] == null){
+		// 	return 0;
+		// }
 		return 1;
 
 	}
