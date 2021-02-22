@@ -145,4 +145,10 @@ class Status extends CI_Controller {
 		$this->session->set_flashdata('InputMessage',$message);
 
 	}
+	// BELL-BELL 2.22.21
+	public function ajax_done_student_number(){
+		$std_no = $this->input->post('student_number');
+		$data = $this->TrackerModel->ajax_student_number($std_no);
+		echo json_encode($data);
+	}
 }

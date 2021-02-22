@@ -90,6 +90,19 @@
 			opacity: .9;
 			filter: alpha(opacity=50);
 		}
+		.done_student_number{
+			/* position:relative; */
+			padding-top: 100px;
+		}
+		.no-padding-left{
+			padding-left: 0;
+		}
+		.display_none{
+			display: none;
+		}
+		#done_student_number_errmsg{
+			color: red !important;
+		}
 	</style>
 	
 	</head>
@@ -427,8 +440,39 @@
 										</div>
 		                            </div>
 									<div class="tab-pane" id="DONE">
-										<h2 class="info-text">  Welcome, Dominican! </h2>
-										<h3 class="info-text">  You are now enrolled to St. Dominic College of Asia! </h3>
+										<div class="done_welcome display_none" id="done_welcome">
+											<h2 class="info-text">  Welcome, Dominican! </h2>
+											<h3 class="info-text">  You are now enrolled to St. Dominic College of Asia! </h3>
+											<h4 class="info-text">  Click the link below to register for your Digital Citizenship Accounts </h4>
+											<h3 class="info-text">  
+												<a href="https://docs.google.com/forms/d/1ZJ_40HBCcciCFu9Yzx7OoZeezQnfLdifR9w4Q1h9zPs/edit" target="_blank">
+													STUDENT DIGITAL CITIZENSHIP FORM
+												</a>  
+											</h3>
+											<h3 class="info-text">  
+												<a href="https://tinyurl.com/idapplicationform" target="_blank">
+													ID APPLICATION FORM
+												</a>  
+											</h3>
+											
+										</div>
+										
+										<div class="done_student_number" id="done_student_number">
+											<div class="col-md-2">
+											</div>
+											<div class="col-md-8">
+												<label for="done_student_number">Enter Student Number</label>
+												<div class="col-md-10 no-padding-left">
+													<input type="text" class="form-control" id="done_student_number_text">
+													&nbsp;<span id="done_student_number_errmsg"></span>
+												</div>
+												<div class="col-md-2 no-padding-left">
+													<a class="btn btn-info" id="done_student_number_submit">Submit</a>
+												</div>
+											</div>
+											<div class="col-md-2">
+											</div>
+										</div>
 		                            </div>
 		                        </div>
 		                        <div class="wizard-footer">
@@ -487,4 +531,5 @@
 	<!--  Tracker JS	-->	
 	<!-- <script src="<?php echo base_url(); ?>assets/js/tracker.js" type="text/javascript"></script> -->
 	<script src="assets/js/tracker.js" type="text/javascript"></script>
+	<script src="assets/js/ajax_student_number.js" type="text/javascript"></script>
 </html>

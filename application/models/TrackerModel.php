@@ -49,6 +49,14 @@ class TrackerModel extends CI_Model{
 		return $result->num_rows();
 
 	}
+	public function ajax_student_number($student_number){
+		$this->db->select('Student_Number');
+		$this->db->where('Student_Number',$student_number);
+		$result = $this->db->get('student_info')->result();
+		if($result){
+			return $result[0];
+		}
+	}
 
 
 	
