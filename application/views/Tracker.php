@@ -324,7 +324,7 @@
 																<p>1</p>
 															</div>
 		                                                    <i class="ti-angle-double-right"></i>
-															<p>Proceed to an Advisor of your chosen program</p>
+															<p>Proceed to an Adviser of your chosen program</p>
 		                                                </div>
 		                                            </div>
 		                                        </div>
@@ -348,7 +348,7 @@
 																<p>3</p>
 															</div>
 															<i class="ti-receipt"></i>
-															<p>Get a print of your temporary Regform</p>
+															<p>Get a print of your temporary Register form</p>
 		                                                </div>
 		                                            </div>
 		                                        </div>
@@ -402,7 +402,7 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<h3 style="text-align: center;">
-													<a href="https://www.aub.com.ph/">
+													<a href="https://stdominiccollege.edu.ph/SDCAPayment/" target="_blank">
 														SDCA Online Payment
 													</a>
 												</h3>
