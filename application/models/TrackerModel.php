@@ -49,9 +49,11 @@ class TrackerModel extends CI_Model{
 		return $result->num_rows();
 
 	}
-	public function ajax_student_number($student_number){
-		$this->db->select('Student_Number');
+	// BELL-BELL 2.22.21
+	public function ajax_student_number($student_number,$reference_number){
+		$this->db->select('Student_Number','Reference_Number');
 		$this->db->where('Student_Number',$student_number);
+		$this->db->where('Reference_Number',$reference_number);
 		$result = $this->db->get('student_info')->result();
 		if($result){
 			return $result[0];

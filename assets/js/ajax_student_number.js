@@ -17,13 +17,17 @@
 $(document).ready(function () {
     $("#done_student_number_submit").click(function(){
         var std_num = $("#done_student_number_text").val();
+        var ref_num = $("#StudentInfo").data("ref");
         if(std_num.length > 0){
             // console.log('arf');
             $.ajax({
                 url: "http://localhost/enrollmenttracker/index.php/status/ajax_done_student_number",
                 type:"post",
                 dataType:"json",
-                data:{student_number:std_num},
+                data:{
+                    student_number:std_num,
+                    reference_number:ref_num,
+                },
                 success: function(data){
                     // $("#done_student_number_errmsg").html("Im in").show().fadeOut("slow");
                     if(data){

@@ -148,7 +148,8 @@ class Status extends CI_Controller {
 	// BELL-BELL 2.22.21
 	public function ajax_done_student_number(){
 		$std_no = $this->input->post('student_number');
-		$data = $this->TrackerModel->ajax_student_number($std_no);
+		$ref_no = $this->input->post('reference_number');
+		$data = $this->TrackerModel->ajax_student_number($std_no,$ref_no);
 		echo json_encode($data);
 	}
 }
