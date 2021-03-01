@@ -175,7 +175,7 @@
 												</div>
 												<!-- Examination -->
 												<!-- BELL-BELL 2.18.21 -->
-												Encode of Information
+												Admission
 												<!--  -->
 											</a>
 										</li>
