@@ -1,19 +1,3 @@
-// $(document).on("click", "#done_student_number_submit" ,function(){
-//     var std_num = $(done_student_number).val();
-//     if(!std_num || std_num != "" || std_num != null){
-//       $.ajax({
-//         url: "http://localhost/enrollmenttracker/index.php/status/ajax_done_student_number",
-//         type:"post",
-//         dataType:"json",
-//         data:{student_number:std_num},
-//         success: function(data){
-//             alert(data);
-//         }
-//       });
-//     }else{
-
-//     }
-// });
 $(document).ready(function () {
     $("#done_student_number_submit").click(function(){
         var std_num = $("#done_student_number_text").val();
@@ -21,7 +5,7 @@ $(document).ready(function () {
         if(std_num.length > 0){
             // console.log('arf');
             $.ajax({
-                url: "http://localhost/enrollmenttracker/index.php/status/ajax_done_student_number",
+                url: "index.php/status/ajax_done_student_number",
                 type:"post",
                 dataType:"json",
                 data:{

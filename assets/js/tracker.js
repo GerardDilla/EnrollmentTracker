@@ -9,11 +9,12 @@ function getStatus(firstload = 0){
 
     tabs = {
         ExamStatus: {
-            check:$('#examination_tab .success-check'),
-            icon:$('#examination_tab .icon-circle'),
-            iconselect:$('#examination_tab'),
+            check:$('#admission_tab .success-check'),
+            icon:$('#admission_tab .icon-circle'),
+            iconselect:$('#admission_tab'),
             progressbar:'12.5%',
-            content:$('#Examination'),
+            content:$('#Admission'),
+            circle_bg:$('#circle-bg-admission'),
         },
         AdvisingStatus: {
             check:$('#advising_tab .success-check'),
@@ -21,6 +22,7 @@ function getStatus(firstload = 0){
             iconselect:$('#advising_tab'),
             progressbar:'37.5%',
             content:$('#Advising'),
+            circle_bg:$('#circle-bg-advising'),
         },
         PaymentStatus: {
             check:$('#payment_tab .success-check'),
@@ -28,6 +30,7 @@ function getStatus(firstload = 0){
             iconselect:$('#payment_tab'),
             progressbar:'62.5%',
             content:$('#Payment'),
+            circle_bg:$('#circle-bg-payment'),
         }
     };
     $.ajax({
@@ -52,6 +55,8 @@ function getStatus(firstload = 0){
 
                     tab['check'].show();
                     tab['icon'].addClass("checked");
+                    tab['circle_bg'].addClass("orange_bg");
+                    
                     if(firstload == 1){
                         tab['content'].removeClass("active");
                         tab['iconselect'].removeClass("active");

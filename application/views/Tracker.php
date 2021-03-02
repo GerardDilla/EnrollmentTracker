@@ -103,6 +103,9 @@
 		#done_student_number_errmsg{
 			color: red !important;
 		}
+		.orange_bg{
+			background-color: #EB5E28 !important;
+		}
 	</style>
 	
 	</head>
@@ -165,15 +168,15 @@
 									     <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 21%;"></div>
 									</div>
 									<ul>
-			                            <li id="examination_tab" data-percentage="">
-											<a href="#Examination" data-toggle="tab">
-												<div class="icon-circle">
+			                            <li id="admission_tab" data-percentage="">
+											<a href="#Admission" data-toggle="tab">
+												<div class="icon-circle" id="circle-bg-admission">
 													<i class="ti-book"></i>
 													<div class="success-check">
 														<i class="ti-check"></i>
 													</div>
 												</div>
-												<!-- Examination -->
+												<!-- Admission -->
 												<!-- BELL-BELL 2.18.21 -->
 												Admission
 												<!--  -->
@@ -181,7 +184,7 @@
 										</li>
 			                            <li id="advising_tab">
 											<a href="#Advising" data-toggle="tab">
-												<div class="icon-circle">
+												<div class="icon-circle" id="circle-bg-advising">
 													<i class="ti-write"></i>
 													<div class="success-check">
 														<i class="ti-check"></i>
@@ -192,7 +195,7 @@
 										</li>
 			                            <li id="payment_tab">
 											<a href="#Payment" data-toggle="tab">
-												<div class="icon-circle">
+												<div class="icon-circle" id="circle-bg-payment">
 													<i class="ti-credit-card"></i>
 													<div class="success-check">
 														<i class="ti-check"></i>
@@ -203,19 +206,19 @@
 										</li>
 										<li id="done_tab">
 											<a href="#DONE" data-toggle="tab">
-												<div class="icon-circle">
+												<div class="icon-circle" id="circle-bg-done">
 													<i class="ti-check"></i>
 												</div>
-												DONE
+												Digital Citizenship
 											</a>
 										</li>
 			                        </ul>
 
 								</div>
 		                        <div class="tab-content">
-		                            <div class="tab-pane content_tab" id="Examination">
+		                            <div class="tab-pane content_tab" id="Admission">
 		                            	<div class="row">
-											<h5 class="info-text">Entrance Examination</h5>
+											<h5 class="info-text">Admission</h5>
 											
 											<div class="row">
 												<div class="col-sm-8 col-sm-offset-2">
