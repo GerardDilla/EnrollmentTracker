@@ -54,7 +54,7 @@ class TrackerModel extends CI_Model{
 		$this->db->select('Student_Number','Reference_Number');
 		$this->db->where('Student_Number',$student_number);
 		$this->db->where('Reference_Number',$reference_number);
-		$result = $this->db->get('student_info')->result();
+		$result = $this->db->get('Student_Info')->result();
 		if($result){
 			return $result[0];
 		}
