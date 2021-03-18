@@ -6,7 +6,7 @@ class TrackerModel extends CI_Model{
 
 	public function getStudentInfo($array)
 	{	
-		$this->db->select('Student_Number,Reference_Number,First_Name,Middle_Name,Last_Name');
+		$this->db->select('Student_Number,Reference_Number,First_Name,Middle_Name,Last_Name,Applied_Semester,Applied_SchoolYear');
 		$this->db->where('Reference_Number',$array['Reference_Number']);
 		$result = $this->db->get('Student_Info');
 		return $result;

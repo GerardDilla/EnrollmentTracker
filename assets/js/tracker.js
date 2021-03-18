@@ -15,6 +15,7 @@ function getStatus(firstload = 0){
             progressbar:'12.5%',
             content:$('#Admission'),
             circle_bg:$('#circle-bg-admission'),
+            previous_button:$('#previous_button')
         },
         AdvisingStatus: {
             check:$('#advising_tab .success-check'),
@@ -23,6 +24,7 @@ function getStatus(firstload = 0){
             progressbar:'37.5%',
             content:$('#Advising'),
             circle_bg:$('#circle-bg-advising'),
+            previous_button:$('#previous_button')
         },
         PaymentStatus: {
             check:$('#payment_tab .success-check'),
@@ -31,6 +33,7 @@ function getStatus(firstload = 0){
             progressbar:'62.5%',
             content:$('#Payment'),
             circle_bg:$('#circle-bg-payment'),
+            previous_button:$('#previous_button')
         }
     };
     $.ajax({
@@ -56,6 +59,7 @@ function getStatus(firstload = 0){
                     tab['check'].show();
                     tab['icon'].addClass("checked");
                     tab['circle_bg'].addClass("orange_bg");
+                    
                     
                     if(firstload == 1){
                         tab['content'].removeClass("active");

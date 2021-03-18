@@ -41,6 +41,7 @@ class Status extends CI_Controller {
 		$studentInfo = $this->TrackerModel->getStudentInfo($input);
 		$status = $studentInfo->num_rows();
 		$data = $studentInfo->result_array();
+		// die(json_encode($studentInfo->result_array()));
 		if($status == 0){
 
 			$this->load->view('Tracker');
@@ -51,9 +52,12 @@ class Status extends CI_Controller {
 		}else{
 
 			$this->session->set_userdata('Reference',$data[0]['Reference_Number']);
-			$this->session->set_userdata('Semester',$input['Semester']);
-			$this->session->set_userdata('School_Year',$input['School_Year']);
+			// $this->session->set_userdata('Semester',$input['Semester']);
+			// $this->session->set_userdata('School_Year',$input['School_Year']);
+			$this->session->set_userdata('Semester',$data[0]['Applied_Semester']);
+			$this->session->set_userdata('School_Year',$data[0]['Applied_SchoolYear']);
 			$this->session->set_userdata('Name',$data[0]['First_Name'].' '.$data[0]['Middle_Name'].' '.$data[0]['Last_Name']);
+			// die($data[0]['Applied_Semester']);
 			$this->load->view('Tracker');
 		}
 		
