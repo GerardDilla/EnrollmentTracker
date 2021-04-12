@@ -11,31 +11,31 @@
     <meta name="viewport" content="width=device-width" />
 
 	<!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.creative-tim.com/product/paper-bootstrap-wizard"/>
+    <!-- <link rel="canonical" href="https://www.creative-tim.com/product/paper-bootstrap-wizard"/>
 
     <meta name="keywords" content="wizard, bootstrap wizard, creative tim, long forms, 3 step wizard, sign up wizard, beautiful wizard, long forms wizard, wizard with validation, paper design, paper wizard bootstrap, bootstrap paper wizard">
-    <meta name="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
+    <meta name="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors."> -->
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Paper Bootstrap Wizard by Creative Tim">
+    <!-- <meta itemprop="name" content="Paper Bootstrap Wizard by Creative Tim">
     <meta itemprop="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
-    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg">
+    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg"> -->
 
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@creativetim">
     <meta name="twitter:title" content="Paper Bootstrap Wizard by Creative Tim">
     <meta name="twitter:description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
     <meta name="twitter:creator" content="@creativetim">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg"> -->
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Paper Bootstrap Wizard by Creative Tim | Free Boostrap Wizard" />
+    <!-- <meta property="og:title" content="Paper Bootstrap Wizard by Creative Tim | Free Boostrap Wizard" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://demos.creative-tim.com/paper-bootstrap-wizard/wizard-list-place.html" />
     <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg" />
     <meta property="og:description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors." />
-    <meta property="og:site_name" content="Creative Tim" />
+    <meta property="og:site_name" content="Creative Tim" /> -->
 
 	<!-- CSS Files -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" />
