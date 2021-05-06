@@ -389,7 +389,7 @@
 												<div class="col-sm-4">
 												</div>
 												<div class="col-sm-12">
-													<h5 class="info-text"> Note: Skip step 4 if you are a new student.</h5>
+													<!-- <h5 class="info-text"> Note: Skip step 4 if you are a new student.</h5> -->
 		                                        </div>
 												
 		                                    </div>
