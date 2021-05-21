@@ -18,6 +18,7 @@ class Status extends CI_Controller {
 	}
 	public function index($Reference_Number = '')
 	{
+		redirect('https://stdominiccollege.edu.ph/DOSE');
 		//Gathers inputs
 		$input = array(
 			'Reference_Number' => $Reference_Number != '' ? $Reference_Number : $this->input->get('rn')
